@@ -63,7 +63,19 @@ export default function Footer() {
                 </div>
 
                 <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '2rem', textAlign: 'center', opacity: 0.6, fontSize: '0.9rem' }}>
-                    &copy; {new Date().getFullYear()} Crabby Al&apos;s Seafood Restaurant. All rights reserved.
+                    <p>&copy; {new Date().getFullYear()} Crabby Al&apos;s Seafood Restaurant. All rights reserved.</p>
+                    <p style={{ marginTop: '0.5rem' }}>
+                        <a
+                            href="https://lexicodesdigital.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ color: 'white', transition: 'color 0.2s' }}
+                            onMouseEnter={e => e.currentTarget.style.color = 'var(--accent)'}
+                            onMouseLeave={e => e.currentTarget.style.color = 'white'}
+                        >
+                            Built By LexiCodesDigital
+                        </a>
+                    </p>
                 </div>
             </div>
 
